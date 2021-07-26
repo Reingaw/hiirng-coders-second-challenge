@@ -109,6 +109,13 @@ h3 .ZAO{
     grid-template-rows: repeat(2, 1fr);
 }
 
+@media screen AND (max-width: 720px) {
+    .cards-wrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+    }
+}
+
 .card {
     width: 100%;
     max-width: 270px;
@@ -148,6 +155,48 @@ h3 .ZAO{
 .card button:hover {
     background-color: #050505;
     color: #fff;
+}
+
+.pop-up {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.pop-up-body {
+    width: 100%;
+    max-width: 510px;
+    padding: 30px;
+    background-color: #f6f6f6;
+    border-radius: 8px;
+}
+
+.input-wrapper, input, #finish-cart {
+    width: 100%;
+}
+
+input, #finish-cart {
+    padding: 20px 30px;
+    margin-block: 5px;
+    outline: none;
+}
+
+#finish-cart {
+    border: 0;
+    color: #fff;
+    font-weight: 700;
+    background-color: #f00;
+    cursor: pointer;
+}
+
+#finish-cart:hover {
+    filter: brightness(.8);
 }
 
 footer {
