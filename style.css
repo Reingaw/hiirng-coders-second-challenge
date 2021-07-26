@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    height: 100%;
+    background-color: #F8F5F1;
+  }
+  
+  body, textarea, button, input {
+    font-family:'Montserrat', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  #root {
+    width: 100%;
+    max-width: 1366px;
+    margin-inline: auto;
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    padding: 10px 25px;
+    box-shadow: 3px 0 2px 2px rgba(0, 0, 0, .2);
+    user-select: none;
+}
+
+h3 {
+    cursor: pointer;
+}
+
+h3 span {
+    border: 1px solid #000;
+    padding: 3px;
+}
+
+h3 .ZAO{
+    color: #fff;
+    background-color: #000;
+}
+
+.cartIcon {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.cartIcon .icon, .cartIcon span {
+    cursor: pointer;
+}
+
+.cartIcon span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15px;
+    height: 15px;
+    background-color: #000;
+    color: #fff;
+    font-size: 10px;
+    border-radius: 50%;
+    margin-left: -3px;
+}
+
+.banner-section {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 15px;
+    background-image: url('./img/fashion.jpg');
+    background-position: top center;
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+}
+
+.banner-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-text .outlet-text {
+    font-size: 46px;
+    font-weight: 700;
+}
+
+.banner-text .promo-text {
+    font-size: 36px;
+}
+
+.cards-section {
+    padding-block: 60px;
+}
+
+.cards-section h1 {
+    font-size: 60px;
+    text-align: center;
+}
+
+.cards-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.card {
+    width: 100%;
+    max-width: 270px;
+    margin: 20px auto;
+    border: 1px solid #d5d5d5;
+    background-color: #fff;
+}
+.card img {
+    width: 100%;
+}
+
+.card h5 {
+    height: 60px;
+}
+
+.card h5, .card h4 {
+    padding: 10px 5px;
+}
+
+.card h4 {
+    height: 30px;
+}
+
+.card button {
+    width: 100%;
+    outline: none;
+    border: 1px solid #000;
+    background-color: #fff;
+    color: #000;
+    font-weight: 700;
+    padding: 20px 0;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color .2s, color .2s;
+}
+
+.card button:hover {
+    background-color: #050505;
+    color: #fff;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #000;
+    padding: 15px 0;
+}
+
+footer p {
+    color: #fff;
+    font-size: 12px;
+    cursor: pointer;
+    user-select: none;
+}
